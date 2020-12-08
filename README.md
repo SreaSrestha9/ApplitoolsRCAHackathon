@@ -1,5 +1,5 @@
 Pre-requisites:
-1.	 Visual Studio installed on your machine. Workload ".NET desktop development" should be installed in Visual Studio too (if no - add it with Visual Studio Installer)
+1.	 Visual Studio installed on your machine. Workload ".NET desktop development" should be installed in Visual Studio too (if not add it with Visual Studio Installer)
 
      •	Install it from:
 
@@ -11,7 +11,7 @@ Pre-requisites:
     
       https://support.google.com/chrome/answer/95346?co=GENIE.Platform%3DDesktop&hl=en&oco=0 
 
-3.	Chrome Webdriver is on your machine and is in the PATH. Here are some resources from the internet that'll help you.
+3.	Chrome Webdriver is on your machine and is in the PATH.
 
     Download Chrome Webdriver from:
     
