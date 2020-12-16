@@ -33,12 +33,10 @@ namespace ApplitoolsRCA.PageServices
         public void ClickFilterButton() =>
             SiteDriver.FindElement(HomePageObjects.FilterButtonCssSelector, How.CssSelector).Click();
 
-        public ProductPage ClickAppliAirXNight()
-        {
+        public void ClickAppliAirXNight() =>
             SiteDriver.FindElement(HomePageObjects.AppliAirXNightCssSelector, How.CssSelector).Click();
-            return new ProductPage();
-        }
-
+            
+        
         #endregion
     }
 }

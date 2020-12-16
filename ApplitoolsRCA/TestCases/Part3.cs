@@ -32,7 +32,7 @@ namespace ApplitoolsRCA.TestCases
         public void ProductDetailsTest()
         {
             homePage = new HomePage(Urls.FinalProductionVersion);
-            productPage = homePage.ClickAppliAirXNight();
+            homePage.ClickAppliAirXNight();
             _eyes.Open(homePage.Driver, "AppliFashion", "Test 3");
             _eyes.CheckWindow("product details", true);
         }

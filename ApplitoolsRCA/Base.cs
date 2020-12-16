@@ -15,10 +15,7 @@ namespace ApplitoolsRCA
     public class Base
     {
         public Eyes _eyes;
-        public Eyes _eyes1;
-        public Eyes _eyes2;
         public HomePage homePage;
-        public ProductPage productPage;
         public VisualGridRunner runner;
         public Configuration config;
         
@@ -28,10 +25,9 @@ namespace ApplitoolsRCA
             //Initialize the Runner for your test.
             runner = new VisualGridRunner(10);
 
-            // Initialize the eyes SDK (IMPORTANT: make sure your API key is set in the APPLITOOLS_API_KEY env variable).
+            // Initialize the eyes SDK 
             _eyes = new Eyes(runner);
-            //_eyes.ApiKey = "AS876OwEVY3qDFEAlB4NERfld2wrXCbSDVxewhHgn5E110";
-
+            
             // Initialize eyes Configuration
             config = new Configuration();
             config.SetApiKey("AS876OwEVY3qDFEAlB4NERfld2wrXCbSDVxewhHgn5E110");
@@ -40,10 +36,10 @@ namespace ApplitoolsRCA
 
             // Add browsers with different viewports
             //Uncomment these to run in multiple browsers
-            //config.AddBrowser(1200, 800, BrowserType.FIREFOX);
-            //config.AddBrowser(1200, 800, BrowserType.EDGE_CHROMIUM);
-            //config.AddBrowser(1200, 800, BrowserType.SAFARI);
-            //config.AddDeviceEmulation(DeviceName.iPhone_X);
+            config.AddBrowser(1200, 800, BrowserType.FIREFOX);
+            config.AddBrowser(1200, 800, BrowserType.EDGE_CHROMIUM);
+            config.AddBrowser(1200, 800, BrowserType.SAFARI);
+            config.AddDeviceEmulation(DeviceName.iPhone_X);
 
             _eyes.SetConfiguration(config);
 
