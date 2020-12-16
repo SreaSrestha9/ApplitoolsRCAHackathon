@@ -36,10 +36,10 @@ namespace ApplitoolsRCA
 
             // Add browsers with different viewports
             //Uncomment these to run in multiple browsers
-            config.AddBrowser(1200, 800, BrowserType.FIREFOX);
-            config.AddBrowser(1200, 800, BrowserType.EDGE_CHROMIUM);
-            config.AddBrowser(1200, 800, BrowserType.SAFARI);
-            config.AddDeviceEmulation(DeviceName.iPhone_X);
+            //config.AddBrowser(1200, 800, BrowserType.FIREFOX);
+            //config.AddBrowser(1200, 800, BrowserType.EDGE_CHROMIUM);
+            //config.AddBrowser(1200, 800, BrowserType.SAFARI);
+            //config.AddDeviceEmulation(DeviceName.iPhone_X);
 
             _eyes.SetConfiguration(config);
 
